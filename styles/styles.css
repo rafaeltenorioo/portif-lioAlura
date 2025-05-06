@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #358cf7;
+    --descricao: #F9F9F9;
+    --cor-de-fundo: #040814;
+    --cinza-secundario: #C0C0C0;
+    --fonte-principal:"Inter", sans-serif;
+}
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.principal {
+    background-image: url("./Background.png"); 
+    /* só funcionou quando coloquei a imagem em uma pasta junto com o arquivo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--descricao);
+    display: block;
+    margin-bottom: 1rem;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__imagem {
+    margin: 1em 0em 2em 0em;
+}
+.container__caixa {
+    margin: 0em 6em;
+}
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
+.container4 {
+    text-align: center;
+    height: 100vh;
+}
+.container4__título{
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+    font-weight: 700;
+}
+.container4__dispositivos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin: 5em 0;
+}
+
+.dispositivos img {
+    width: 320px; /* Ajuste conforme necessário */
+    height: auto;
+}
+.descricao__dispositivos {
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: 700;
+}
+.rodape {
+    text-align: center;
+}
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1em 5em;
+}
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin: 0em 2em;
+    white-space: nowrap; 
+    /* “Não quebre esse texto em várias linhas, mesmo que ele seja grande. Mantenha tudo na mesma linha.” */
+}
+.rodape__texto {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cinza-secundario);
+}
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+.lista__link a:active {
+    color: aqua;
+}
